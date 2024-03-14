@@ -71,14 +71,8 @@ We have created [a free course on `egghead.io` 🥚](https://egghead.io/courses/
 
 ## Motivation 🤔
 
-`react-beautiful-dnd` exists to create beautiful drag and drop for lists that anyone can use - even people who cannot see. For a good overview of the history and motivations of the project you can take a look at these external resources:
+`vue-beautiful-dnd` exists to create beautiful drag and drop for lists that anyone can use - even people who cannot see. For a good overview of the history and motivations of the project you can take a look at these external resources:
 
-- 📖 [Rethinking drag and drop](https://medium.com/@alexandereardon/rethinking-drag-and-drop-d9f5770b4e6b)
-- 🎧 [React podcast: fast, accessible and beautiful drag and drop](https://reactpodcast.simplecast.fm/17)
-
-## Not for everyone ✌️
-
-There are a lot of libraries out there that allow for drag and drop interactions within React. Most notable of these is the amazing [`react-dnd`](https://github.com/react-dnd/react-dnd). It does an incredible job at providing a great set of drag and drop primitives which work especially well with the [wildly inconsistent](https://www.quirksmode.org/blog/archives/2009/09/the_html5_drag.html) html5 drag and drop feature. `react-beautiful-dnd` is a higher level abstraction specifically built for lists (vertical, horizontal, movement between lists, nested lists and so on). Within that subset of functionality `react-beautiful-dnd` offers a powerful, natural and beautiful drag and drop experience. However, it does not provide the breadth of functionality offered by `react-dnd`. So `react-beautiful-dnd` might not be for you depending on what your use case is.
 
 ## Documentation 📖
 
@@ -139,34 +133,6 @@ There are a lot of libraries out there that allow for drag and drop interactions
 - [Tables](/docs/patterns/tables.md)
 - [Reparenting a `<Draggable />`](/docs/guides/reparenting.md) - _Using our cloning API or your own portal_
 
-### Support 👩‍⚕️
-
-- [Engineering health](/docs/support/engineering-health.md)
-- [Community and addons](/docs/support/community-and-addons.md)
-- [Release notes and changelog](https://github.com/atlassian/react-beautiful-dnd/releases)
-- [Upgrading](/docs/support/upgrading.md)
-- [Road map](https://github.com/atlassian/react-beautiful-dnd/issues)
-- [Media](/docs/support/media.md)
-
-## Read this in other languages 🌎
-
-- [![kr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/South-Korea.png) **한글/Korean**](https://github.com/LeeHyungGeun/react-beautiful-dnd-kr)
-- [![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **На русском/Russian**](https://github.com/vtereshyn/react-beautiful-dnd-ru)
-- [![pt](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Português/Portuguese**](https://github.com/dudestein/react-beautiful-dnd-pt)
-- [![gr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Greece.png) **Ελληνικά/Greek**](https://github.com/milvard/react-beautiful-dnd-gr)
-- [![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **日本語/Japanese**](https://github.com/eltociear/react-beautiful-dnd-ja)
-
 ## Creator ✍️
 
-Alex Reardon [@alexandereardon](https://twitter.com/alexandereardon)
-
-> Alex is no longer personally maintaning this project. The other wonderful maintainers are carrying this project forward.
-
-## Maintainers
-
-- [Daniel Del Core](https://twitter.com/danieldelcore)
-- Many other [@Atlassian](https://twitter.com/Atlassian)'s!
-
-## Collaborators 🤝
-
-- Bogdan Chadkin [@IAmTrySound](https://twitter.com/IAmTrySound)
+Chad McCaulley
