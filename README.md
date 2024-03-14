@@ -1,21 +1,3 @@
-
-## ⚠️ Maintenance & support
-
-This library continues to be relied upon heavily by Atlassian products, but we are focused on other priorities right now and have no current plans for further feature development or improvements.
-
-It will continue to be here on GitHub and we will still make critical updates (e.g. security fixes, if any) as required, but will not be actively monitoring or replying to issues and pull requests.
-
-We recommend that you don’t raise issues or pull requests, as they will not be reviewed or actioned until further notice.
-
----
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png" alt="react beautiful dnd logo" />
-</p>
-<h1 align="center">react-beautiful-dnd <small><sup>(rbd)</sup></small></h1>
-
-<div align="center">
-
 **Beautiful** and **accessible** drag and drop for lists with [`React`](https://facebook.github.io/react/)
 
 [![CircleCI branch](https://img.shields.io/circleci/project/github/atlassian/react-beautiful-dnd/master.svg)](https://circleci.com/gh/atlassian/react-beautiful-dnd/tree/master)
