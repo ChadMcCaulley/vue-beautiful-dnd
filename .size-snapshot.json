@@ -1,15 +1,15 @@
 {
-  "dist/react-beautiful-dnd.js": {
+  "dist/vue-beautiful-dnd.js": {
     "bundled": 364998,
     "minified": 133574,
     "gzipped": 39437
   },
-  "dist/react-beautiful-dnd.min.js": {
+  "dist/vue-beautiful-dnd.min.js": {
     "bundled": 306810,
     "minified": 108365,
     "gzipped": 31340
   },
-  "dist/react-beautiful-dnd.esm.js": {
+  "dist/vue-beautiful-dnd.esm.js": {
     "bundled": 240910,
     "minified": 125371,
     "gzipped": 32650,
