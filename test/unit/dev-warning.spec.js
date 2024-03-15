@@ -1,4 +1,5 @@
 // @flow
+
 import { warning } from '../../src/dev-warning';
 
 const warn = jest.spyOn(console, 'warn').mockImplementation(() => {});
@@ -14,7 +15,7 @@ it('should log a warning to the console', () => {
 });
 
 it('should not log a warning if warnings are disabled', () => {
-  window['__react-beautiful-dnd-disable-dev-warnings'] = true;
+  window['__vue-beautiful-dnd-disable-dev-warnings'] = true;
 
   warning('hey');
   warning('sup');
@@ -24,7 +25,7 @@ it('should not log a warning if warnings are disabled', () => {
 
   // re-enable
 
-  window['__react-beautiful-dnd-disable-dev-warnings'] = false;
+  window['__vue-beautiful-dnd-disable-dev-warnings'] = false;
 
   warning('hey');
 

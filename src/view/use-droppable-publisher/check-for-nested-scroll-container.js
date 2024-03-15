@@ -1,4 +1,5 @@
 // @flow
+
 import getClosestScrollable from './get-closest-scrollable';
 import { warning } from '../../dev-warning';
 
@@ -22,6 +23,6 @@ export default (scrollable: ?Element) => {
     A Droppable can only have one scroll parent (which can be itself)
     Nested scroll containers are currently not supported.
 
-    We hope to support nested scroll containers soon: https://github.com/atlassian/react-beautiful-dnd/issues/131
+    We hope to support nested scroll containers soon: https://github.com/atlassian/vue-beautiful-dnd/issues/131
   `);
 };

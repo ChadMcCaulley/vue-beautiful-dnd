@@ -1,11 +1,11 @@
-**Beautiful** and **accessible** drag and drop for lists with [`React`](https://facebook.github.io/react/)
+**Beautiful** and **accessible** drag and drop for lists with [`Vue`](https://vuejs.org/)
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/atlassian/react-beautiful-dnd/master.svg)](https://circleci.com/gh/atlassian/react-beautiful-dnd/tree/master)
-[![npm](https://img.shields.io/npm/v/react-beautiful-dnd.svg)](https://www.npmjs.com/package/react-beautiful-dnd)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/atlassian/vue-beautiful-dnd/master.svg)](https://circleci.com/gh/atlassian/vue-beautiful-dnd/tree/master)
+[![npm](https://img.shields.io/npm/v/vue-beautiful-dnd.svg)](https://www.npmjs.com/package/vue-beautiful-dnd)
 
 ![quote application example](https://user-images.githubusercontent.com/2182637/53614150-efbed780-3c2c-11e9-9204-a5d2e746faca.gif)
 
-[Play with this example if you want!](https://react-beautiful-dnd.netlify.com/iframe.html?selectedKind=board&selectedStory=simple)
+[Play with this example if you want!](https://vue-beautiful-dnd.netlify.com/iframe.html?selectedKind=board&selectedStory=simple)
 
 </div>
 
@@ -21,9 +21,9 @@
 
 ## Get started 👩‍🏫
 
-We have created [a free course on `egghead.io` 🥚](https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-react-beautiful-dnd) to help you get started with `react-beautiful-dnd` as quickly as possible.
+We have created [a free course on `egghead.io` 🥚](https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-vue-beautiful-dnd) to help you get started with `vue-beautiful-dnd` as quickly as possible.
 
-[![course-logo](https://user-images.githubusercontent.com/2182637/43372837-8c72d3f8-93e8-11e8-9d92-a82adde7718f.png)](https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-react-beautiful-dnd)
+[![course-logo](https://user-images.githubusercontent.com/2182637/43372837-8c72d3f8-93e8-11e8-9d92-a82adde7718f.png)](https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-vue-beautiful-dnd)
 
 ## Currently supported feature set ✅
 
@@ -55,14 +55,13 @@ We have created [a free course on `egghead.io` 🥚](https://egghead.io/courses/
 
 `vue-beautiful-dnd` exists to create beautiful drag and drop for lists that anyone can use - even people who cannot see. For a good overview of the history and motivations of the project you can take a look at these external resources:
 
-
 ## Documentation 📖
 
 ### About 👋
 
 - [Installation](/docs/about/installation.md)
 - [Examples and samples](/docs/about/examples.md)
-- [Get started](https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-react-beautiful-dnd)
+- [Get started](https://egghead.io/courses/beautiful-and-accessible-drag-and-drop-with-vue-beautiful-dnd)
 - [Design principles](/docs/about/design-principles.md)
 - [Animations](/docs/about/animations.md)
 - [Accessibility](/docs/about/accessibility.md)
@@ -104,7 +103,7 @@ We have created [a free course on `egghead.io` 🥚](https://egghead.io/courses/
 - [Avoiding image flickering](/docs/guides/avoiding-image-flickering.md)
 - [Non-visible preset styles](/docs/guides/preset-styles.md)
 - [How we detect scroll containers](/docs/guides/how-we-detect-scroll-containers.md)
-- [How we use dom events](/docs/guides/how-we-use-dom-events.md) - _Useful if you need to build on top of `react-beautiful-dnd`_
+- [How we use dom events](/docs/guides/how-we-use-dom-events.md) - _Useful if you need to build on top of `vue-beautiful-dnd`_
 - [Adding `<Draggable />`s during a drag (11.x behaviour)](/docs/guides/changes-while-dragging.md) - _⚠️ Advanced_
 - [Setting up Content Security Policy](/docs/guides/content-security-policy.md)
 

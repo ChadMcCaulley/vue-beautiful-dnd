@@ -1,30 +1,32 @@
 // @flow
-import { type Position } from 'css-box-model';
-import { invariant } from '../../invariant';
+
 import type {
-  DimensionMarshal,
   Callbacks,
+  DimensionMarshal,
   StartPublishingResult,
 } from './dimension-marshal-types';
+import type {
+  Critical,
+  DraggableDescriptor,
+  DroppableDescriptor,
+  DroppableId,
+  LiftRequest,
+} from '../../types';
+import type {
+  DraggableEntry,
+  DroppableEntry,
+  Registry,
+  RegistryEvent,
+  Subscriber,
+  Unsubscribe,
+} from '../registry/registry-types';
 import createPublisher, {
   type WhileDraggingPublisher,
 } from './while-dragging-publisher';
+
+import { type Position } from 'css-box-model';
 import getInitialPublish from './get-initial-publish';
-import type {
-  Registry,
-  DroppableEntry,
-  DraggableEntry,
-  Subscriber,
-  Unsubscribe,
-  RegistryEvent,
-} from '../registry/registry-types';
-import type {
-  DroppableId,
-  DroppableDescriptor,
-  LiftRequest,
-  Critical,
-  DraggableDescriptor,
-} from '../../types';
+import { invariant } from '../../invariant';
 import { warning } from '../../dev-warning';
 
 type Collection = {|
@@ -55,7 +57,7 @@ function shouldPublishUpdate(
       You are attempting to add or remove a Draggable [id: ${entry.descriptor.id}]
       while a drag is occurring. This is only supported for virtual lists.
 
-      See https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/patterns/virtual-lists.md
+      See https://github.com/atlassian/vue-beautiful-dnd/blob/master/docs/patterns/virtual-lists.md
     `);
     return false;
   }

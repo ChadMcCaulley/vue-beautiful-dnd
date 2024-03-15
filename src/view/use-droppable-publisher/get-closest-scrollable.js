@@ -1,7 +1,8 @@
 // @flow
+
+import getBodyElement from '../get-body-element';
 import { invariant } from '../../invariant';
 import { warning } from '../../dev-warning';
-import getBodyElement from '../get-body-element';
 
 type Overflow = {|
   overflowX: string,
@@ -62,7 +63,7 @@ const isBodyScrollable = (): boolean => {
     Because we cannot determine if the <body> is a scroll container, and generally it is not one,
     we will be treating the <body> as *not* a scroll container
 
-    More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/guides/how-we-detect-scroll-containers.md
+    More information: https://github.com/atlassian/vue-beautiful-dnd/blob/master/docs/guides/how-we-detect-scroll-containers.md
   `);
   return false;
 };

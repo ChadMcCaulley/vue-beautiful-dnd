@@ -1,5 +1,5 @@
 module.exports = {
-  presets: ['@babel/react', '@babel/flow', ['@babel/env', { loose: true }]],
+  presets: ['@babel/flow', ['@babel/env', { loose: true }]],
   plugins: [
     '@babel/transform-object-assign',
     ['@babel/proposal-class-properties', { loose: true }],

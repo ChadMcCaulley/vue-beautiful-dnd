@@ -1,8 +1,10 @@
 // @flow
-import React from 'react';
-import { fireEvent, render } from '@testing-library/react';
+
 import App, { type Item } from '../../util/app';
-import { touch, simpleLift } from '../../util/controls';
+import { fireEvent, render } from '@testing-library/react';
+import { simpleLift, touch } from '../../util/controls';
+
+import React from 'react';
 import { forcePressThreshold } from '../../../../../src/view/use-sensor-marshal/sensors/use-touch-sensor';
 import { isDragging } from '../../util/helpers';
 
@@ -25,7 +27,7 @@ function getForceChange(force: number): Event {
 }
 
 // Note: this behaviour is a bit strange as we are working around a safari issue
-// https://github.com/atlassian/react-beautiful-dnd/issues/1401
+// https://github.com/atlassian/vue-beautiful-dnd/issues/1401
 describe('force press not respected (default)', () => {
   it('should not abort presses that do not have enought pressure', () => {
     const { getByText } = render(<App />);

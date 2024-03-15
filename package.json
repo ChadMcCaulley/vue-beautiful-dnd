@@ -1,7 +1,7 @@
 {
   "author": "Alex Reardon <areardon@atlassian.com>",
   "bugs": {
-    "url": "https://github.com/atlassian/react-beautiful-dnd/issues"
+    "url": "https://github.com/atlassian/vue-beautiful-dnd/issues"
   },
   "config": {
     "prettier_target": "*.{js,jsx,md,json} src/**/*.{js,jsx,md,json} test/**/*.{js,jsx,md,json} docs/**/*.{js,jsx,md,json} stories/**/*.{js,jsx,md,json} cypress/**/*.{js,jsx,md,json} csp-server/**/*.{js,jsx,md,json}"
@@ -11,8 +11,6 @@
     "css-box-model": "^1.2.0",
     "memoize-one": "^5.1.1",
     "raf-schd": "^4.0.2",
-    "react-redux": "^7.2.0",
-    "redux": "^4.0.4",
     "use-memo-one": "^1.1.1"
   },
   "description": "Beautiful and accessible drag and drop for lists with React",
@@ -26,14 +24,11 @@
     "@babel/plugin-transform-runtime": "7.9.0",
     "@babel/preset-env": "7.9.5",
     "@babel/preset-flow": "7.9.0",
-    "@babel/preset-react": "7.9.4",
     "@emotion/babel-preset-css-prop": "10.0.27",
     "@emotion/core": "10.0.28",
     "@emotion/styled": "10.0.27",
     "@storybook/addon-storysource": "5.3.21",
-    "@storybook/react": "5.3.21",
     "@storybook/theming": "5.3.21",
-    "@testing-library/react": "10.4.9",
     "@vue/test-utils": "^1.0.0-beta.33",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
@@ -45,7 +40,6 @@
     "cypress": "4.4.0",
     "emotion-theming": "10.0.27",
     "enzyme": "3.11.0",
-    "enzyme-adapter-react-16": "1.15.2",
     "eslint": "6.8.0",
     "eslint-config-airbnb": "18.1.0",
     "eslint-config-prettier": "6.15.0",
@@ -57,8 +51,6 @@
     "eslint-plugin-jest": "23.20.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "3.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "flow-bin": "0.110.1",
     "fs-extra": "9.1.0",
@@ -71,11 +63,6 @@
     "markdown-it": "10.0.0",
     "prettier": "2.0.4",
     "raf-stub": "3.0.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-test-renderer": "16.13.1",
-    "react-virtualized": "9.21.2",
-    "react-window": "1.8.6",
     "require-from-string": "2.0.2",
     "rimraf": "3.0.2",
     "rollup": "2.6.1",
@@ -114,30 +101,26 @@
     "sortable",
     "reorder",
     "reorderable",
-    "react",
-    "react.js",
+    "vue",
+    "vue.js",
     "natural",
     "beautiful",
     "accessible"
   ],
   "license": "Apache-2.0",
-  "main": "dist/react-beautiful-dnd.cjs.js",
-  "module": "dist/react-beautiful-dnd.esm.js",
-  "name": "react-beautiful-dnd",
-  "peerDependencies": {
-    "react": "^16.8.5 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.8.5 || ^17.0.0 || ^18.0.0"
-  },
+  "main": "dist/vue-beautiful-dnd.cjs.js",
+  "module": "dist/vue-beautiful-dnd.esm.js",
+  "name": "vue-beautiful-dnd",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atlassian/react-beautiful-dnd.git"
+    "url": "https://github.com/atlassian/vue-beautiful-dnd.git"
   },
   "scripts": {
     "build": "yarn build:clean && yarn build:dist && yarn build:flow",
     "build-storybook": "build-storybook -c .storybook -o site",
     "build:clean": "rimraf dist",
     "build:dist": "rollup -c",
-    "build:flow": "echo \"// @flow\n\nexport * from '../src';\" > dist/react-beautiful-dnd.cjs.js.flow",
+    "build:flow": "echo \"// @flow\n\nexport * from '../src';\" > dist/vue-beautiful-dnd.cjs.js.flow",
     "bundle-size:check": "cross-env SNAPSHOT=match yarn bundle-size:update",
     "bundle-size:update": "yarn build:clean && yarn build:dist && yarn build:clean",
     "lint:css": "stylelint \"stories/**/*.{js,jsx}\"",

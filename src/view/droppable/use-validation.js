@@ -1,9 +1,10 @@
 // @flow
-import { invariant } from '../../invariant';
+
 import type { Props } from './droppable-types';
-import { warning } from '../../dev-warning';
 import checkIsValidInnerRef from '../check-is-valid-inner-ref';
+import { invariant } from '../../invariant';
 import useDevSetupWarning from '../use-dev-setup-warning';
+import { warning } from '../../dev-warning';
 
 type Args = {|
   props: Props,
@@ -65,7 +66,7 @@ const standard: CheckFn[] = [
       DroppableProvided > placeholder could not be found.
 
       Please be sure to add the {provided.placeholder} React Node as a child of your Droppable.
-      More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/api/droppable.md
+      More information: https://github.com/atlassian/vue-beautiful-dnd/blob/master/docs/api/droppable.md
     `);
   },
 ];

@@ -1,14 +1,14 @@
 /* eslint-disable flowtype/require-valid-file-annotation */
 
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
-import replace from 'rollup-plugin-replace';
-import strip from 'rollup-plugin-strip';
-import { terser } from 'rollup-plugin-terser';
-import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
+import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 import pkg from './package.json';
+import replace from 'rollup-plugin-replace';
+import resolve from 'rollup-plugin-node-resolve';
+import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
+import strip from 'rollup-plugin-strip';
+import { terser } from 'rollup-plugin-terser';
 
 const input = './src/index.js';
 const extensions = ['.js', '.jsx'];
@@ -50,13 +50,10 @@ export default [
   {
     input,
     output: {
-      file: 'dist/react-beautiful-dnd.js',
+      file: 'dist/vue-beautiful-dnd.js',
       format: 'umd',
-      name: 'ReactBeautifulDnd',
-      globals: { react: 'React', 'react-dom': 'ReactDOM' },
+      name: 'VueBeautifulDnd',
     },
-    // Only deep dependency required is React
-    external: ['react', 'react-dom'],
     plugins: [
       json(),
       babel(getBabelOptions({ useESModules: true })),
@@ -73,11 +70,8 @@ export default [
     output: {
       file: 'dist/react-beautiful-dnd.min.js',
       format: 'umd',
-      name: 'ReactBeautifulDnd',
-      globals: { react: 'React', 'react-dom': 'ReactDOM' },
+      name: 'VueBeautifulDnd',
     },
-    // Only deep dependency required is React
-    external: ['react', 'react-dom'],
     plugins: [
       json(),
       babel(getBabelOptions({ useESModules: true })),

@@ -1,16 +1,18 @@
 // @flow
-import { type Position } from 'css-box-model';
-import { type Node } from 'react';
+
 import type {
-  DraggableId,
-  DroppableId,
-  DraggableDimension,
-  State,
-  MovementMode,
   ContextId,
-  ElementId,
+  DraggableDimension,
+  DraggableId,
   DraggableRubric,
+  DroppableId,
+  ElementId,
+  MovementMode,
+  State,
 } from '../../types';
+
+import { type Node } from 'react';
+import { type Position } from 'css-box-model';
 import { dropAnimationFinished } from '../../state/action-creators';
 
 export type DraggingStyle = {|
@@ -75,7 +77,7 @@ export type DragHandleProps = {|
 
   // Overriding default role to have a more descriptive text ("Draggable item")
   // Sadly we cannot use this right now due an issue with lighthouse
-  // https://github.com/atlassian/react-beautiful-dnd/issues/1742
+  // https://github.com/atlassian/vue-beautiful-dnd/issues/1742
   // 'aria-roledescription': string,
 
   // Using the description property of the drag handle to provide usage instructions

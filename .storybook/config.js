@@ -1,18 +1,25 @@
-import React from 'react';
-import { addParameters, configure, addDecorator } from '@storybook/react';
-import { create } from '@storybook/theming';
-import { withPerformance } from 'storybook-addon-performance';
-import GlobalStylesDecorator from './custom-decorators/global-styles';
-// adding css reset - storybook includes a css loader
 import '@atlaskit/css-reset';
+
+import { addDecorator, addParameters, configure } from '@storybook/react';
+
+import GlobalStylesDecorator from './custom-decorators/global-styles';
+import React from 'react';
 import { colors } from '@atlaskit/theme';
+import { create } from '@storybook/theming';
 import logo from './compressed-logo-rbd.svg';
 import { version } from '../package.json';
+import { withPerformance } from 'storybook-addon-performance';
+
+// adding css reset - storybook includes a css loader
+
+
+
+
 
 const theme = create({
   brandImage: logo,
-  brandName: 'react-beautiful-dnd',
-  brandUrl: 'https://github.com/atlassian/react-beautiful-dnd',
+  brandName: 'vue-beautiful-dnd',
+  brandUrl: 'https://github.com/atlassian/vue-beautiful-dnd',
 });
 
 addParameters({
@@ -31,7 +38,7 @@ addDecorator(withPerformance);
 const req = require.context('../stories/', true, /.stories.js$/);
 
 function loadStories() {
-  req.keys().forEach(filename => req(filename));
+  req.keys().forEach((filename) => req(filename));
 }
 
 configure(loadStories, module);
@@ -58,7 +65,7 @@ console.log(
 );
 
 table([
-  ['react-beautiful-dnd version', version],
+  ['vue-beautiful-dnd version', version],
   ['react version', React.version],
   ['process.env.NODE_ENV', process.env.NODE_ENV],
 ]);
